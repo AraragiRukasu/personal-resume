@@ -1,8 +1,8 @@
 {
-  "name": "araragirukasu.github.io",
+  "name": "personal-resume",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://araragirukasu.github.io/",
+  "homepage": "https://araragirukasu.github.io/personal-resume",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
