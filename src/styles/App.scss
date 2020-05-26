@@ -1,0 +1,77 @@
+//color palette
+$primary: #938e94;
+$primary-darker: #5D5C61;
+$secondary: #7395AE;
+$secondary-darker: #557A95;
+$terciary: #B1A296;
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-size: 14px;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: $primary-darker;
+    text-decoration: none;
+    :hover{
+        color: $primary;
+        font-style: none;
+        font-weight: 400;
+    }
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $secondary;
+    height: 3rem;
+    font-size: 24px;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+
+    a{
+        color: whitesmoke;
+        display: block;
+        text-align: center;
+        padding: .5rem .5rem;
+        height: 2rem;
+    }
+
+    a:hover{
+        font-style: none;
+        font-weight: 500;
+        background-color: $secondary-darker;
+    }
+}
+
+.content{
+    position: fixed;
+    top: 3rem;
+    padding: 1%;
+    
+    >*{
+       padding: .5rem;
+    }
+
+    @media only screen and (min-width: 1024px){
+        width:70%;
+        margin: 0 15%;
+    }
+
+    @media only screen and (max-width: 1024px){
+        width:100%;
+    }
+}
+
+.row-container{
+    display: flex;
+    flex-flow: row wrap;
+    >*{
+        flex-grow: 1;
+        min-width: 15rem;
+    }
+}
