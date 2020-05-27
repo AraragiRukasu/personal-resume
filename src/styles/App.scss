@@ -13,12 +13,16 @@ body{
     margin: 0;
 }
 
+h1,h2,h3,h4,h5{
+    font-weight:500;
+}
+
 a{
-    color: $primary-darker;
+    color: $primary;
     text-decoration: none;
     :hover{
-        color: $primary;
-        font-style: none;
+        color: $primary-darker;
+        text-decoration: none;
         font-weight: 400;
     }
 }
@@ -32,6 +36,7 @@ a{
     font-size: 24px;
     display: flex;
     flex-flow: row-reverse nowrap;
+    border-bottom: solid $primary-darker .15rem;
 
     a{
         color: whitesmoke;
@@ -52,26 +57,59 @@ a{
     position: fixed;
     top: 3rem;
     padding: 1%;
-    
-    >*{
-       padding: .5rem;
-    }
 
     @media only screen and (min-width: 1024px){
-        width:70%;
+        width:68%;
         margin: 0 15%;
     }
 
     @media only screen and (max-width: 1024px){
-        width:100%;
+        width:96%;
+        margin: 0 1%;
     }
 }
 
 .row-container{
     display: flex;
     flex-flow: row wrap;
+    margin-bottom: 1rem;
     >*{
-        flex-grow: 1;
+
         min-width: 15rem;
+        flex-grow: 1;
+    }
+}
+
+.skills{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    flex-grow: 1;
+    max-width: 30%;
+}
+
+.bubble{
+    color: whitesmoke;
+    font-weight: 600;
+    background-color: $terciary;
+    border-color: $primary-darker;
+    border-style: solid;
+    border-width: thin;
+    border-radius: .6rem;
+    padding: .1rem .5rem;
+    margin: .3rem;
+}
+
+.experience{
+    flex-grow: 2;
+}
+
+.personal-info{
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .info{
+        margin-left: .2rem;
     }
 }
