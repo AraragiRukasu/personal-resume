@@ -6,10 +6,11 @@ import { FaLinkedinIn } from "react-icons/fa"
 
 const cellphone = "(+549)3413145243";
 const fullName = "Lucas Sandoz";
-const nationalities = "Argentine, Italian";
+const nationalities = "Nationalities: Argentine, Italian";
 const github = "https://github.com/AraragiRukasu";
 const falseLinkedIn = "https://www.linkedin.com/in/lucas-sandoz";
 const trueLinkedIn = "https://www.linkedin.com/in/lucas-sandoz-438047a3/?locale=en_US";
+
 const PersonalInfo = () => {
     return(
         <div className="personal-info">
@@ -17,13 +18,13 @@ const PersonalInfo = () => {
             <PersonalInfoItem info={fullName}/>
             <PersonalInfoItem info={nationalities}/>
             <PersonalInfoItem info={cellphone}>
-                <FcPhoneAndroid/>
+                <FcPhoneAndroid className="icon-small"/>
             </PersonalInfoItem>
             <PersonalInfoItem info={github} link={github}>
-                <DiGithubAlt/>
+                <DiGithubAlt className="icon-small"/>
             </PersonalInfoItem>
             <PersonalInfoItem info={falseLinkedIn} link={trueLinkedIn}>
-                <FaLinkedinIn/>
+                <FaLinkedinIn className="icon-small"/>
             </PersonalInfoItem>
         </div>
     )

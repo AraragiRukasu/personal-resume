@@ -1,8 +1,8 @@
 import React from "react"
 import Introduction from "./Introduction"
-import Skills from "./Skills"
-import Experience from "./Experience"
-import PersonalInfo from "./PersonalInfo"
+import Skills from "./Skills/Skills"
+import Experience from "./Experience/Experience"
+import PersonalInfo from "./PersonalInfo/PersonalInfo"
 
 const Content = () => {
     return(

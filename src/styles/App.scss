@@ -37,7 +37,7 @@ a{
     display: flex;
     flex-flow: row-reverse nowrap;
     border-bottom: solid $primary-darker .15rem;
-
+    z-index: 2;
     a{
         color: whitesmoke;
         display: block;
@@ -54,7 +54,7 @@ a{
 }
 
 .content{
-    position: fixed;
+    position: relative;
     top: 3rem;
     padding: 1%;
 
@@ -73,18 +73,49 @@ a{
     display: flex;
     flex-flow: row wrap;
     margin-bottom: 1rem;
-    >*{
+    justify-content: flex-end;
 
+    >*{
         min-width: 15rem;
-        flex-grow: 1;
+        flex-basis: 0;
     }
+}
+
+.introduction{
+    flex-grow: 2;
+    min-width: 20rem;
+}
+
+.personal-info{
+    flex-grow: 1;
+    max-width: 20rem;
+    min-width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 0.6rem;
+
+    .info{
+        margin-left: .2rem;
+    }
+}
+
+.personal-info-item{
+    display: flex;
+}
+
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-grow: 1;
+    min-width: 15rem;
+    max-width: 30rem;
 }
 
 .skills{
     display: flex;
     flex-flow: row-reverse wrap;
-    flex-grow: 1;
-    max-width: 30%;
 }
 
 .bubble{
@@ -101,15 +132,27 @@ a{
 
 .experience{
     flex-grow: 2;
+    min-width: 20rem;
 }
 
-.personal-info{
-    max-width: 30%;
+.place-dates{
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 500;
+}
 
-    .info{
-        margin-left: .2rem;
+.experience-description{
+    display: flex;
+    flex-flow: column nowrap;
+
+    >*{
+        padding: 0.3rem 0.5rem;
     }
+}
+
+.icon-small{
+    width: 1.2rem;
+    height: 1.2rem;
 }
